@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work_01</title>
+    <link href="assets/css/normalize.css">
+
+    <style>
+
+        body>section{
+            z-index: 10;
+            width: 50vw;
+            height: 50vh;
+            position: absolute;
+        }
+        body>section:nth-child(1){
+            background-color:red;
+            top: 0;
+            left: 0;
+        }
+        body>section:nth-child(2){
+            background-color:darkgreen;
+            top: 0;
+            right: 0;
+        }
+        body>section:nth-child(3){
+            background-color:orange;
+            bottom: 0;
+            left: 0;
+        }
+        body>section:nth-child(4){
+            background-color:deeppink;
+            bottom: 0;
+            right: 0;
+
+        }
+        body>section>div{
+            position: absolute;
+            z-index: 100;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            border-radius:200px;
+        }
+        body>section:nth-child(1)>div{
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        body>section:nth-child(2)>div{
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        body>section:nth-child(3)>div{
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        body>section:nth-child(4)>div{
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+        body>section>div>div{
+            position: absolute;
+            z-index: 200;
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            top: calc(50% - 60px);
+            left: calc(50% - 60px);
+
+        }
+        body>div{
+            position: absolute;
+            z-index: 100;
+            width: 200px;
+            height: 200px;
+            background-color: white;
+            top:calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+
+        body>div>div{
+            position: absolute;
+            z-index: 200;
+            width: 150px;
+            height: 150px;
+            background-color: red;
+            top: calc(50% - 75px);
+            left: calc(50% - 75px);
+            border-radius: 100px;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+<section>
+    <div>
+        <div></div>
+    </div>
+</section>
+
+<div>
+    <div>
+
+    </div>
+</div>
+
+</body>
+</html>
